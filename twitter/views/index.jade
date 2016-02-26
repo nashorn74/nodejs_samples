@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  #items
+    - each twit in items
+      p
+      p
+      div.twit
+        div.text= twit.text
+        div.tw_date= twit.tw_date
+        div.rt_count= twit.rt_count
+        div.fv_count= twit.fv_count

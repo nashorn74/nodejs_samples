@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  #contents
+    - each content in contents
+      div.content
+        div.date= content.date
+        div.area= content.area
+        div.pm10= content.pm10
+        div.pm25= content.pm25 
+        div.grade= content.grade
+        div.material= content.material

@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1= title
+  #items
+    - each item in items
+      p
+      p
+      div.item
+        div.title= item.title
+        div.maker= item.maker
+        div.price_max= item.price_max
+        div.price_min= item.price_min 
+        div.link
+           a(href=item.link) Detail Information
+        div.image
+           img(src=item.image_url)
